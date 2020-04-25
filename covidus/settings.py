@@ -28,7 +28,7 @@ SECRET_KEY = '4=wie*3&#jz4@)kqwe9tbnw)x7#%(+jswt1$=o!gykb0(ee)pv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["covidus.herokuapp.com", "127.0.0.1"]
 
 
 # Application definition
