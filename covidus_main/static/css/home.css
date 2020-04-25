@@ -1,0 +1,33 @@
+.logo {
+    height: 100%;
+    width: 50px;
+    background-color: red;
+}
+
+.logo {
+    height: 100%;
+    width: 50px;
+    
+}
+
+header {
+    border: 2px solid red;
+}
+
+.body_header {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.body_header h3 {
+    font-size: 5rem;
+
+
+}
+.a-header {
+    padding: 32px;
+}
