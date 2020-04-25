@@ -2,3 +2,4 @@ covidus/__pycache__/*
 db.sqlite3
 covidus_main/__pycache__/*
 covidus_main/migrations/__pycache__/*
+.vscode/*
