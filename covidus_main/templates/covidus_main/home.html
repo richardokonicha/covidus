@@ -16,61 +16,53 @@
     <b>C</b> ovidus</a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
-      <a href="#projects" class="w3-bar-item w3-button">Covidus</a>
-      <a href="#about" class="w3-bar-item w3-button">Covidus</a>
-      <a href="#contact" class="w3-bar-item w3-button">Covidu</a>
+      <a href="#projects" class="w3-bar-item w3-button">Vulnerability</a>
+      <a href="#about" class="w3-bar-item w3-button">Public</a>
+      <a href="#contact" class="w3-bar-item w3-button">Info</a>
     </div>
   </div>
 </div>
 
 <!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+{% comment %} <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
   <img class="w3-image" src="/w3images/architect.jpg" alt="Architecture" width="1500" height="800">
   <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BR</b></span> <span class="w3-hide-small w3-text-light-grey">Architects</span></h1>
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BR</b></span> </h1>
   </div>
-</header>
+</header> {% endcomment %}
 
 <!-- Page content -->
-<div class="w3-content w3-padding" style="max-width:1564px">
+<main class="w3-content w3-padding" style="max-width:1564px">
 
-  <!-- Project Section -->
-  <div class="w3-container w3-padding-32 body_header" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey a-header">Covidus</h3>
-    <h2 class="h3_step2">Place holder place holder Covidus</h3>
-    <h3 class="">placeholder placeholder placeholder info about Covidus more placeholder</h3>
+  <!-- landing Section -->
+  <div class="w3-container w3-padding-32 landing-container" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey landing-1">Covidus</h3>
+    <p class="landing-3">A personal health assistant used by senior citizens and people taking care them, as well as a public health assistant that connects citizens with public health stakeholders such as general practitioners and public health policy makers.
+    <h2 class="landing-2">Covidus Personal Health Assistant</h3>
+    {% comment %} <h3 class="">placeholder placeholder placeholder info about Covidus more placeholder</h3> {% endcomment %}
+
+    {% comment %} <button class="btn-1">Login</button {% endcomment %}
+    <div class="input-container" >
+    <p class="landing-3"> Enter your useraname to login to Covidus</p>
+      <form action="/" target="_blank">
+        <input class="input-1" type="text" placeholder="username" required name="Subject">
+        <input class="input-2" type="text" placeholder="password">
+        <button class="btn-1" type="submit">Enter</button
+
+      </form>
+    </div>
   </div>
   <!-- About Section -->
-  <div class="w3-container w3-padding-32" id="about">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-  </div>
 
  
   <!-- Contact Section -->
-  <div class="w3-container w3-padding-32" id="contact">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
-    <p>Lets get in touch and talk.</p>
-    <form action="/action_page.php" target="_blank">
-      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
-      <button class="w3-button w3-black w3-section" type="submit">
-        <i class="fa fa-paper-plane"></i> SEND MESSAGE
-      </button>
-    </form>
-  </div>
   
 <!-- Image of location/map -->
 <div class="w3-container">
 </div>
 
 <!-- End page content -->
-</div>
+</main>
 
 
 <!-- Footer -->

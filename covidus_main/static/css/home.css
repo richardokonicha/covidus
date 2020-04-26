@@ -4,30 +4,74 @@
     background-color: red;
 }
 
-.logo {
-    height: 100%;
-    width: 50px;
-    
-}
-
-header {
-    border: 2px solid red;
-}
-
 .body_header {
     height: 50vh;
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    position: relative;
+    /* padding: 5rem; */
 
 }
+.landing-container {
+    background-image: ;
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: cover;
+    /* opacity: 80%; */
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
 
+.landing-1 {
+    font-size: 3rem;
+    margin-top: 5rem;
+    font-weight: 600;
+}
+.landing-2 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+
+}
+.landing-3{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.btn-1 {
+    background-color: orange;
+    border-radius: 5px;
+    box-shadow: 0.5px 0 2;
+    border-color: grey;
+    padding: 5px 40px;
+    font-size: 2rem;
+    margin: 20px;
+
+}
+.input-container form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+
+}
+.input-1, .input-2 {
+    display: block;
+    width: 100%;
+    margin: 0.5rem;
+    height: 3rem;
+    border-radius: 10px;
+    text-align: center;
+}
+@media only screen and (min-width: 600px){
 .body_header h3 {
-    font-size: 5rem;
-
-
+    font-size: 3rem;
 }
-.a-header {
-    padding: 32px;
+
 }
