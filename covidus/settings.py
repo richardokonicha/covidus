@@ -81,8 +81,14 @@ WSGI_APPLICATION = 'covidus.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dbl0voicng100c',
+        'USER': 'uszabsumovyymv',
+        'PASSWORD': '4230c4692e4edb394cd83dd3a5f89249e77c01d1730146fb88f2df02c0fd4a75',
+        'HOST': 'ec2-52-6-143-153.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
@@ -140,3 +146,6 @@ DATABASES['default'].update(prod_db)
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 django_heroku.settings(locals())
+
+
+LOGIN_REDIRECT_URL = 'home'

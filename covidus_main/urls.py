@@ -6,3 +6,5 @@ urlpatterns = [
     path('', views.home, name='home'),
     path("enter", views.enter, name="enter")
 ]
+
+
