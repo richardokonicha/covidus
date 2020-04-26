@@ -5,7 +5,7 @@ from covidus_main.models import Profile
 class ProfileForm(forms.ModelForm):
     class Meta:
         model = Profile
-        fields = []
+        fields = '__all__'
 
     def __str__(self):
         return self.name
