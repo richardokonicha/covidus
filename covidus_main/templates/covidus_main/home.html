@@ -44,9 +44,10 @@
     {% comment %} <button class="btn-1">Login</button {% endcomment %}
     <div class="input-container" >
     <p class="landing-3"> Enter your useraname to login to Covidus</p>
-      <form action="/" target="_blank">
-        <input class="input-1" type="text" placeholder="username" required name="Subject">
-        <input class="input-2" type="text" placeholder="password">
+      <form action="/enter" target="_blank" method="post">
+      {% csrf_token %} 
+        <input class="input-1" type="text" placeholder="username" required name="username">
+        <input class="input-2" type="text" placeholder="password" name="password">
         <button class="btn-1" type="submit">Enter</button
 
       </form>
