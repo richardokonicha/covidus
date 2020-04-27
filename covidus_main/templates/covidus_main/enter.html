@@ -9,56 +9,112 @@
     Welcome {{user}} you can now fill in your data below
     <div class="container-fluid contain mt-5">
       <div class="row">
-        {% comment %} <div class="col-sm-3 col-md-2 sidebar">
 
-          <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Export</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item</a></li>
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-            <li><a href="">More navigation</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-          </ul>
+        <div class="col-sm-3 side-bar">
+          <img src="{% static 'img/profile.jpeg'%}" alt="" class="profile-img">
+          <p>George Papas</p>
+          <a class="side-button">Online</a>
+          <div>
+              <table class="table table-striped">
+                <!-- <thead>
+                  <tr>
+                    <th>Header</th>
+                    <th>Header</th>
+                  </tr>
+                </thead> -->
+                <tbody>
+                  <tr>
+                    <td>Full name</td>
+                    <td>George Papas</td>
+                  </tr>
+                
+                  <tr>
+                    <td>Username</td>
+                    <td>georgepapas</td>
+                  </tr>
+                  <tr>
+                    <td>Age</td>
+                    <td>67</td>
+                  </tr>
+                  <tr>
+                    <td>Country</td>
+                    <td>Greece</td>
+                  </tr>
+                  <tr>
+                    <td>Postal Code</td>
+                    <td>10672</td>
+                  </tr>
+                  <tr>
+                    <td>Sex</td>
+                    <td>Male</td>
+                  </tr>
+              
+                  <tr>
+                    <td>Smoking history</td>
+                    <td>Former smoker</td>
+                  </tr>
+                  <tr>
+                    <td>Chronic obstructive pulmonary disease</td>
+                    <td>No</td>
+                  </tr>
+                  <tr>
+                    <td>Diabetes</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Hypertension</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Coronary heart disease</td>
+                    <td>No</td>
+                  </tr>
+                  <tr>
+                    <td>Hepatitis B infection</td>
+                    <td>No</td>
+                  </tr>
+                  <tr>
+                    <td>Cancer</td>
+                    <td>No</td>
+                  </tr>
+                  <tr>
+                    <td>Chronic renal disease</td>
+                    <td>No</td>
+                  </tr>
+                  <tr>
+                    <td>Immunodeficiency</td>
+                    <td>No</td>
+                  </tr>
+
+                </tbody>
+              </table>
+  
+          </div>
         </div>
-         {% endcomment %}
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <div class="col-sm-offset-3 main">
         <div class="nav-dash">
             <a href="" class="page-header">
-                <h1 >Personal View</h1>
+                <h1 >Hello George</h1>
+                <p class="page-header_p">Your health looks good today, here is your risk assesment vulnerability chart</p>
             </a>
-            <a href="/enter" class="page-header">
+            <!-- <a href="/enter" class="page-header">
                 <h1 >Aggregate View</h1>
-            </a>
+            </a> -->
         </div>
 
 
           <div class="row placeholders">
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <canvas id="myChart"></canvas>
+            <div class="col-xs-12 col-sm-10 placeholder">
+              <div class="vulnerability">
+                <h4>Vulnerability chart for over the last 14days</h4>
+                <img src="{% static 'img/vulnerability.png'%}" class="vulnerability-chart"><img>
+              </div>
 
-              {% comment %} <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail"> {% endcomment %}
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
+              <!-- {% comment %} <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail"> {% endcomment %} -->
             </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-          
           </div>
 
-          <h2 class="sub-header">Section title</h2>
+          <h2 class="sub-header">Daily Assesment</h2>
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>
