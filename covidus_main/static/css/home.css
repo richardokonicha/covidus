@@ -1,7 +1,6 @@
 .logo {
     height: 100%;
-    width: 50px;
-    background-color: red;
+    width: 150px;
 }
 
 .body_header {
@@ -46,10 +45,11 @@
 }
 
 .btn-1 {
-    background-color: orange;
-    border-radius: 5px;
-    box-shadow: 0.5px 0 2;
-    border-color: grey;
+    background-color: #0288D1;
+    border-radius: 20px;
+    /* box-shadow: 0.5px 0 2; */
+    border-color: #0288D1;
+
     padding: 5px 40px;
     font-size: 2rem;
     margin: 20px;
@@ -74,4 +74,12 @@
     font-size: 3rem;
 }
 
+}
+
+.pass_user {
+    text-align: center;
+}
+.pass_user_div {
+    /* border: 2px solid red; */
+    
 }
