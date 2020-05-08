@@ -38,13 +38,13 @@
   <!-- landing Section -->
   <div class="w3-container w3-padding-32 landing-container" id="projects">
     <h3 class="w3-border-bottom w3-border-light-grey landing-1">Covidus</h3>
-    <p class="landing-3">A personal health assistant used by senior citizens and people taking care them, as well as a public health assistant that connects citizens with public health stakeholders such as general practitioners and public health policy makers.
+    <p class="landing-3">A personal health assistant used by citizens, connecting them with public health stakeholders such as general practitioners and public health policy makers.
     <h2 class="landing-2">Covidus Personal Health Assistant</h3>
     {% comment %} <h3 class="">placeholder placeholder placeholder info about Covidus more placeholder</h3> {% endcomment %}
 
     {% comment %} <button class="btn-1">Login</button {% endcomment %}
     <div class="input-container" >
-    <p class="landing-3"> Enter your useraname to login to Covidus</p>
+    <p class="landing-3"> Enter your credentials to login to Covidus</p>
       <form action="/enter" target="_blank" method="post">
       {% csrf_token %} 
         <input class="input-1" type="text" placeholder="username" required name="username">
